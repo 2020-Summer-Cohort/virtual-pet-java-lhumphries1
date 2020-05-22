@@ -17,18 +17,7 @@ public class VirtualPet {
     private int exerciseNeed = 20;
     private int rechargeNeed = 20;
 
-    public VirtualPet() {
-    }
-
-    void tick() {
-        hunger = hunger + 5;
-        thirst = thirst + 5;
-        biological = biological + 3;
-        exerciseNeed = exerciseNeed + 4;
-        rechargeNeed = rechargeNeed + 4;
-    }
-
-    public void feed() {
+    void feed() {
         hunger -= 10;
     }
 
@@ -36,7 +25,7 @@ public class VirtualPet {
         return hunger;
     }
 
-    public void giveDrink() {
+    void giveDrink() {
         thirst -= 10;
     }
 
@@ -44,8 +33,8 @@ public class VirtualPet {
         return thirst;
     }
 
-    public void bathroom() {
-        biological = 5;
+    void takeForBiological() {
+        biological -= 5;
     }
 
     int getBiological() {
@@ -68,6 +57,13 @@ public class VirtualPet {
         return exerciseNeed;
     }
 
+    void tick() {
+        hunger = hunger + 9;
+        thirst = thirst + 9;
+        biological = biological + 3;
+        exerciseNeed = exerciseNeed + 4;
+        rechargeNeed = rechargeNeed + 4;
+    }
 }
 
 
