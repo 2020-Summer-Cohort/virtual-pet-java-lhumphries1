@@ -21,15 +21,15 @@ public class VirtualPet {
     }
 
     void tick() {
-        hunger = hunger + 1;
-        thirst = thirst + 1;
-        biological = biological + 1;
-        exerciseNeed = exerciseNeed + 1;
-        rechargeNeed = rechargeNeed + 1;
+        hunger = hunger + 5;
+        thirst = thirst + 5;
+        biological = biological + 3;
+        exerciseNeed = exerciseNeed + 4;
+        rechargeNeed = rechargeNeed + 4;
     }
 
     public void feed() {
-        hunger -= 7;
+        hunger -= 10;
     }
 
     int getHunger() {
@@ -37,7 +37,7 @@ public class VirtualPet {
     }
 
     public void giveDrink() {
-        thirst -= 9;
+        thirst -= 10;
     }
 
     int getThirst() {
@@ -53,7 +53,7 @@ public class VirtualPet {
     }
 
     void getRest() {
-        rechargeNeed -= 10;
+        rechargeNeed -= 5;
     }
 
     int putToRest() {
