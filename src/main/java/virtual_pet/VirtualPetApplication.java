@@ -27,13 +27,20 @@ public class VirtualPetApplication {
         while (virtualPet.getHunger() < 20) {
             whatToDo(input, petName);
             virtualPet.tick();
+            System.out.println("Hunger" + virtualPet.getHunger());
+            System.out.println("Thirst" + virtualPet.getThirst());
+            System.out.println("Biological" + virtualPet.getBiological());
+            System.out.println("Exercise" + virtualPet.playTime());
+            System.out.println("Exhaustion" + virtualPet.putToRest());
+
             int userChoice = input.nextInt();
+
             if (userChoice == 1) {
                 virtualPet.playWithMe();
                 virtualPet.tick();
                 System.out.println(petName + " is having fun,\nbut iam sure he will be hungry soon!!");
             } else if (userChoice == 2) {
-                virtualPet.getDrink();
+                virtualPet.getThirst();
                 System.out.println(petName + "'s thirst is quenched!\nBiological is calling soon ");
             } else if (userChoice == 3) {
                 virtualPet.getBiological();
