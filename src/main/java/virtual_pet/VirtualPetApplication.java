@@ -21,6 +21,7 @@ public class VirtualPetApplication {
             System.out.println("3. Biological time for " + petName + ". ");
             System.out.println("4. Feed " + petName + "!");
             System.out.println("5. " + petName + "'s nap time. ");
+            System.out.println("6. Exit with no actions.");
         }
 
         public static void gameLoop (Scanner input, String petName){
@@ -50,6 +51,9 @@ public class VirtualPetApplication {
                     System.out.println("Food makes " + petName + " so very happy!!\n ...But i see those eyes getting heavy.");
                 } else if (userChoice == 5) {
                     virtualPet.getRest();
+                    System.out.println("Lets go to bed " + petName + ", you look very sleepy!!s");
+                }else if (userChoice == 6){
+                    System.out.println("Do nothing");
                     break;
                 }
             }
