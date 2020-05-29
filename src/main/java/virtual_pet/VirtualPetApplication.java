@@ -32,7 +32,7 @@ public class VirtualPetApplication {
                 System.out.println("Thirst" + virtualPet.getThirst());
                 System.out.println("Biological" + virtualPet.getBiological());
                 System.out.println("Exercise" + virtualPet.playTime());
-                System.out.println("Exhaustion" + virtualPet.putToRest());
+                System.out.println("Exhaustion" + virtualPet.getRest());
 
                 int userChoice = input.nextInt();
 

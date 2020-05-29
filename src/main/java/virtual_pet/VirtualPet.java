@@ -41,11 +41,11 @@ public class VirtualPet {
         return biological;
     }
 
-    void getRest() {
+    void putToRest() {
         rechargeNeed -= 5;
     }
 
-    int putToRest() {
+    int getRest() {
         return rechargeNeed;
     }
 
